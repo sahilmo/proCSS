@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body ion-header {
+  position: relative;
+  background-color: black;
+  color: #fff6bb;
+  height: 12%;
+}
+
+body ion-header ion-title {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+body ion-content {
+  position: relative;
+  background-color: #666666;
+}
+
+body ion-content #card {
+  background-color: #dbddcc;
+}
+/*# sourceMappingURL=main.css.map */
