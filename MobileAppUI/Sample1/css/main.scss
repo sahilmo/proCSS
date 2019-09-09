@@ -1,8 +1,10 @@
 $colors: (
-  primary: rgb(0, 0, 0),
-  primary-light: lighten(rgb(0, 0, 0), 40%),
-  primary-dark: darken(rgb(0, 0, 0), 40%),
-  accent: #fff6bb
+  primary: #222428,
+  primary-light: lighten(#222428, 40%),
+  primary-dark: darken(#222428, 20%),
+  accent: #fff6bb,
+  text: white,
+  success: #10dc60
 );
 
 // $padding: 15px;
@@ -18,7 +20,8 @@ body {
     position: relative;
     background-color: color(primary);
     color: #fff6bb;
-    height: 12%;
+    height: auto;
+    padding: 4%;
     ion-title {
       position: relative;
       text-align: center;
@@ -27,17 +30,47 @@ body {
     }
   }
 
-  ion-content {
-    position: relative;
-    // margin-top: 30%;
-    //width: 100%;
-    background-color: color(primary-light);
-    // ion-input {
-    //   background-color: #a7a1a1;
-    //   color: #0c0c0c;
-    // }
-    #card {
-      background-color: rgb(219, 221, 204);
+  #card {
+    overflow: auto;
+    ion-card {
+      position: relative;
+      margin-top: 2pt;
+      //width: 100%;
+      height: 25%;
+      color: color(text);
+      background-color: color(primary);
+      ion-card-title,
+      ion-card-subtitle {
+        text-align: center;
+        vertical-align: middle;
+        color: color(accent);
+      }
+      img {
+        float: right;
+        width: auto;
+        margin-top: -70px;
+        height: 120px;
+        margin-right: -15px;
+      }
+      ion-card-content {
+        font-size: 13pt;
+        font-family: cursive;
+        color: color(text);
+      }
+    }
+    ion-buttons {
+      float: right;
+      position: relative;
+      height: 17pt;
+      margin-top: -25px;
+      margin-right: 25px;
+      color: rgb(255, 246, 246);
+      border-radius: 12pt;
+
+      background-color: rgb(7, 79, 82);
+      ion-button {
+        text-transform: capitalize;
+      }
     }
   }
 }

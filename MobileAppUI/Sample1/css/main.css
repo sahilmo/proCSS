@@ -4,9 +4,10 @@ body {
 
 body ion-header {
   position: relative;
-  background-color: black;
+  background-color: #222428;
   color: #fff6bb;
-  height: 12%;
+  height: auto;
+  padding: 4%;
 }
 
 body ion-header ion-title {
@@ -15,12 +16,51 @@ body ion-header ion-title {
   vertical-align: middle;
 }
 
-body ion-content {
-  position: relative;
-  background-color: #666666;
+body #card {
+  overflow: auto;
 }
 
-body ion-content #card {
-  background-color: #dbddcc;
+body #card ion-card {
+  position: relative;
+  margin-top: 2pt;
+  height: 25%;
+  color: white;
+  background-color: #222428;
+}
+
+body #card ion-card ion-card-title,
+body #card ion-card ion-card-subtitle {
+  text-align: center;
+  vertical-align: middle;
+  color: #fff6bb;
+}
+
+body #card ion-card img {
+  float: right;
+  width: auto;
+  margin-top: -70px;
+  height: 120px;
+  margin-right: -15px;
+}
+
+body #card ion-card ion-card-content {
+  font-size: 13pt;
+  font-family: cursive;
+  color: white;
+}
+
+body #card ion-buttons {
+  float: right;
+  position: relative;
+  height: 17pt;
+  margin-top: -25px;
+  margin-right: 25px;
+  color: #fff6f6;
+  border-radius: 12pt;
+  background-color: #074f52;
+}
+
+body #card ion-buttons ion-button {
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=main.css.map */

@@ -11,30 +11,82 @@
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
     <ion-header>
-        <ion-buttons slot="start">
-            <ion-button color="danger"></ion-button>
-        </ion-buttons>
-        <ion-title>Header Layout</ion-title>
+        <ion-title>Story Book</ion-title>
     </ion-header>
 
     <ion-content>
+        <div id="card">
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>Abdul Kalam</ion-card-title>
+                    <ion-card-subtitle>1949 - 2014</ion-card-subtitle>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfz40YqwC4MfGPi7dx0fxn6bIEADF7Mfv_Cn2iSZV5vHB4f-wF"
+                        alt="">
+                </ion-card-header>
 
-        <ion-card id="card">
-            <ion-card-header>
-                <ion-card-title>Card Title</ion-card-title>
-                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-            </ion-card-header>
+                <ion-card-content>
+                    Keep close to Nature's heart... and break clear away, once in awhile,
+                    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+            </ion-card>
+            <ion-buttons class="animated fadeInDown">
+                <ion-button>Click Here</ion-button>
+            </ion-buttons>
 
-            <ion-card-content>
-                Keep close to Nature's heart... and break clear away, once in awhile,
-                and climb a mountain or spend a week in the woods. Wash your spirit clean.
-            </ion-card-content>
-        </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>Mahatma Gandhi</ion-card-title>
+                    <ion-card-subtitle>1869 - 1944</ion-card-subtitle>
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                </ion-card-header>
+
+                <ion-card-content>
+                    Keep close to Nature's heart... and break clear away, once in awhile,
+                    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+            </ion-card>
+            <ion-buttons class="animated fadeInDown">
+                <ion-button>Click Here</ion-button>
+            </ion-buttons>
+
+
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>The Story 2</ion-card-title>
+                    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-content>
+                    Keep close to Nature's heart... and break clear away, once in awhile,
+                    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+            </ion-card>
+            <ion-buttons class="animated fadeInDown">
+                <ion-button>Click Here</ion-button>
+            </ion-buttons>
+
+            <ion-card>
+                <ion-card-header>
+                    <ion-card-title>The Story 2</ion-card-title>
+                    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-content>
+                    Keep close to Nature's heart... and break clear away, once in awhile,
+                    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+            </ion-card>
+            <ion-buttons class="animated fadeInDown">
+                <ion-button>Click Here</ion-button>
+            </ion-buttons>
+
+        </div>
     </ion-content>
 
 </body>
